@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "https://your-render-app.onrender.com";
+  import.meta.env.VITE_API_URL || "https://skill-gap-backend-goi5.onrender.com";
 
 async function parseJsonSafe(res) {
   const text = await res.text();
