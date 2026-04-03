@@ -33,7 +33,7 @@ export default function Upload() {
       }
 
       setMessage("Upload successful. Redirecting to dashboard...");
-      setTimeout(() => navigate("/dashboard"), 600);
+      navigate("/dashboard", { state: { refresh: true, ts: Date.now() } });
     } catch (e) {
       setError(e?.message || "Upload failed.");
     } finally {
